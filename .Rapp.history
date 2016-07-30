@@ -1,0 +1,74 @@
+demo()
+m <- matrix(1:6, nrow=2, ncol=3)
+m
+m <- matrix(1:5, nrow=2, ncol=3)
+m <- matrix(1:7, nrow=2, ncol=3)
+m <- matrix(1:3, nrow=2, ncol=3)
+m
+m <- matrix(1:2, nrow=2, ncol=3)
+m
+m <- matrix(1:6, 2, 3)
+m
+m <- matrix(1:6, 2)
+m
+help(matrix)
+m <- matrix(1:6, 3)
+m
+help(matrix)
+m <- matrix(1:6, 4)
+m <- matrix(1:6, 1)
+m
+help(matrix)
+m <- matrix(1:6, 3, 2)
+m
+help(matrix)
+getwd()
+x = read.csv("hw1_data.csv")
+x
+rownames(x)
+colnames(x)
+print(x)
+x[1:2]
+x[][1,2]
+x[][1]
+head(x)
+nrow(x)
+tail(x)
+tail(x, 2)
+x[47][1]
+x[47]
+x[47, 1]
+x[1, 2]
+y <- is.na(x[:,1])
+x[][1]
+y <- is.na(x[][1])
+y
+which(y)
+length(which(y))
+head(x)
+y <- !is.na(x[][1])
+length(which(y))
+mean(y)
+y
+head(x)
+head(y)
+x(y)
+x[y]
+x[y][]
+x[y][1]
+y <- !is.na(x[][1])
+length(which(y))
+head(y)
+x[which(y)][1]
+x[which(y)]
+head[x]
+head(x)
+which(y)
+c(which(y))
+x[c(which(y))]
+x[which(y), ]
+x[which(y), 1]
+mean(x[which(y), 1])
+x[x$Ozone > 31, ]
+head(x)
+head(y)
