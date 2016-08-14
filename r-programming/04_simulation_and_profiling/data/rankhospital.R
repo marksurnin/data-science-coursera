@@ -28,7 +28,9 @@ rankhospital <- function(state, outcome, num = "best") {
     data[, feature_column] <- as.numeric(data[, feature_column])
   }
   
-  data <- data[order(data[, feature_column], na.last = NA), ]
+  data <- data[order(data[, feature_column], data$Hospital.Name, na.last = NA), ]
+  
+  result <- NA
   
   if (num == 'best') {
     result <- data[1, ]
@@ -38,5 +40,11 @@ rankhospital <- function(state, outcome, num = "best") {
     result <- data[num, ]
   }
   
-  result$Hospital.Name
+  # If the result is not NA, return the name of the hospital
+  if (!is.na(result)) {
+    result$Hospital.Name
+  } else {
+    # Return NA
+    result
+  }
 }
